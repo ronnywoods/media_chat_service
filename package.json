@@ -18,6 +18,7 @@
   "scripts": {
     "lint": "eslint ./",
     "react-dev": "webpack -d --watch",
+    "build": "webpack",
     "server-dev": "nodemon server/serverBundle.js",
     "start": "node server/serverBundle.js",
     "db-init": "postgres -D /usr/local/var/postgres",

@@ -37,12 +37,12 @@ app.get('/', (req, res) => {
       return db('users').select().where('users.username', 'testUser');
     }).then((result) => {
       response.userImage = result[0];
-    }).then(() => res.status(200).send(renderToHTML({ videoData: response, subscribed: true })));
+    }).then(() => res.status(200).send(renderToHTML({ videoData: response, subscribed: false })));
 });
 
 // removing for deployed version
-app.use('/watch', express.static(path.join(__dirname, '../public')));
-app.use('/', express.static(path.join(__dirname, '../public')));
+// app.use('/watch', express.static(path.join(__dirname, '../public')));
+// app.use('/', express.static(path.join(__dirname, '../public')));
 
 app.get('/watch/details', (req, res) => {
   var response = {};
