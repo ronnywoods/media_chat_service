@@ -69,7 +69,7 @@ class CommentHead extends React.Component {
         <Container>
           <CommentCount>{`${this.props.commentCount} Comments`}</CommentCount>
           <SortContainer onClick={this.onSortFocus} >
-            <SortIcon src="/images/sort_grey_48x48.png"></SortIcon>
+            <SortIcon src="https://d1ggtrrftyy4ru.cloudfront.net/sort_grey_48x48.png"></SortIcon>
             <SortText>SORT BY</SortText>
             {this.state.showSort &&
               <SortSelect sortByDate={this.props.sortByDate} sortByLikes={this.props.sortByLikes} onSortBlur={this.onSortBlur}/>

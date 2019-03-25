@@ -203,9 +203,9 @@ class Comment extends React.Component {
           </NameAndDate>
           <CommentText>{this.props.text}</CommentText>
           <Actions>
-            <LikeDislike onClick={this.likeToggle} filter={likeFilter} src="/images/up.svg"></LikeDislike>
+            <LikeDislike onClick={this.likeToggle} filter={likeFilter} src="https://d1ggtrrftyy4ru.cloudfront.net/up.svg"></LikeDislike>
             <LikeCount>{this.props.likes + this.state.newLike}</LikeCount>
-            <LikeDislike onClick={this.dislikeToggle} filter={dislikeFilter} src="/images/down.svg"></LikeDislike>
+            <LikeDislike onClick={this.dislikeToggle} filter={dislikeFilter} src="https://d1ggtrrftyy4ru.cloudfront.net/down.svg"></LikeDislike>
             <Reply onClick={this.prepReply}>REPLY</Reply>
           </Actions>
           <RepliesContainer>
