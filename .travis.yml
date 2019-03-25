@@ -1,0 +1,10 @@
+language: node_js
+env:
+- NODE_ENV=test
+services:
+- postgresql
+before_script:
+- psql -c 'create database videodetails_test2;' -U postgres
+before_install:
+- openssl aes-256-cbc -K $encrypted_f1d9c30b1adc_key -iv $encrypted_f1d9c30b1adc_iv
+  -in config.js.enc -out config.js -d
